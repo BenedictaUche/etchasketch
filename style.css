@@ -84,11 +84,31 @@ h2 {
 
 .range-input {
     margin-left: 10ch;
-
 }
 
+@media only screen and (max-width: 768px) {
 
+    /* Modify the layout and styling for screens with a maximum width of 768px */
+    #container {
+        margin: 5ch 10%;
+    }
 
-/* .square:hover {
-    background-color: red;
-} */
+    .buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2ch 10%;
+    }
+
+    .buttons button {
+        width: 30%;
+        margin: 1ch;
+        transform: scale(1);
+    }
+
+    .range-input {
+        margin-left: 0;
+        margin-top: 2ch;
+        width: 80%;
+        margin-left: 10%;
+    }
+}
